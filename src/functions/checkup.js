@@ -42,15 +42,15 @@ async function checkup() {
                 },
                 {
                     name: 'App Version',
-                    value: data.version,
+                    value: data.version || 'No version info is provided',
                 },
                 {
                     name: 'Restarts',
-                    value: data.restarts
+                    value: data.restarts || 'Restart info is not provided'
                 },
                 {
                     name: 'Status',
-                    value: data.status
+                    value: data.status || 'No status given'
                 },
                 {
                     name: 'Process ID',
@@ -58,11 +58,11 @@ async function checkup() {
                 },
                 {
                     name: 'CPU Usage (percent)',
-                    value: data.cpu.toString()
+                    value: data.cpu.toString() || 'No CPU usage given'
                 }
             ]
         }
-        
+
         arrOfEmbeds.push(embed)
     }
 
