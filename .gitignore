@@ -1,0 +1,13 @@
+# Ignore node modules
+
+node_modules/
+
+# ignore lock files
+
+package-lock.json
+
+yarn.lock
+
+# Ignore config
+
+config.json
