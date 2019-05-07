@@ -49,5 +49,5 @@ client.on('ready', async () => {
 
 if (config.checkup) {
     const checkup = require('./functions/checkup')
-    setInterval(checkup, 12000/* 1800000 */);
+    setInterval(checkup, 1800000);
 }
