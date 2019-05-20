@@ -10,18 +10,12 @@ async function getList() {
     let ex = await exec('pm2 jlist');
     ex = JSON.parse(ex.stdout);
 
-    let i = 0
-
     let arr = [];
 
 
     for (let data of ex) {
         let end = await info(data.name);
         arr.push(end);
-        i++;
-        if (i >= 5) {
-            break;
-        }
     }
 
     return arr;
