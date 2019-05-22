@@ -3,8 +3,6 @@
 const config = require('../../config');
 
 const util = require('util');
-const EE = require('events');
-const events = new EE();
 const sleep = util.promisify(setTimeout);
 
 module.exports = bot => ({
